@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/* reset */
+
+html, body, header, footer, nav, h1, h2, div, p, ul, li, dl, dt, dd, th, td {
+  margin: 0;
+  padding: 0;
+  line-height: 1.0;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* font-size */
+
+html {
+  font-size: 62.5%;
+}
+
+
+/* =10px */
+
+body {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+
+/* =16px */
+
+h2 {
+  font-size: 30px;
+  font-size: 3.0rem;
+}
+
+p {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+body {
+  background: url(img/bg04.jpg);
+}
+
+#wrap {
+  margin: 50px auto;
+  padding: 50px 0 30px;
+  width: 65%;
+  height: 100%;
+  background: rgba(255, 255, 255, .7);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#wrap h2 {
+  text-shadow: 3px 3px 3px #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#wrap p {
+  text-align: center;
+  line-height: 1.4;
+}
+
+form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 10px 0;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 7px;
+  box-shadow: 0 0 5px rgba( 0, 0, 0, 0.2);
+}
+
+dl {
+  margin: 0 auto;
+  width: 90%;
+  overflow: hidden;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+dt, dd {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
+}
+
+dt:first-child {
+  border-top: none;
+}
+
+dd:first-of-type {
+  border-top: none;
+}
+
+dt {
+  text-align: center;
+  padding: 20px 0 15px 0;
+  width: 25%;
+  float: left;
+  clear: both;
+}
+
+dd {
+  width: 75%;
+  padding: 20px 0 15px 5%;
+  float: right;
+}
+
+dd:last-child {
+  padding-bottom: 20px;
+}
+
+.required {
+  color: #3377ff;
+  font-size: 14px;
+  line-height: 2;
+}
+
+form input, textarea {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background: #fafafa;
+  padding: 2px 2%;
+}
+
+form input {
+  height: 2em;
+}
+
+.submit {
+  text-align: center;
+  padding: 20px 0 15px;
+  border-top: 1px solid #ccc;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn {
+  width: auto;
+  height: auto;
+  padding: 7px 15px;
+  vertical-align: middle;
+  color: #444444;
+  background: #eeeeee;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-weight: bold;
+  -webkit-appearance: none;
+}
+
+.home a {
+  display: block;
+  color: #3377ff;
+  font-weight: bold;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.home a:hover {
+  color: orange;
+}
