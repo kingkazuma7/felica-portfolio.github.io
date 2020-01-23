@@ -93,7 +93,7 @@ function h($sdt) {
   <p class="submit"><button type="submit" class="btn">送信</button></p>
 
 
-  <p class="home"><a href="http://felica7.webcrow.jp/portfolio/">Back Home</a></p>
+  <p class="home"><a href="/portfolio/">Back Home</a></p>
   </div>
   <!-- /#wrap -->
   </form>
