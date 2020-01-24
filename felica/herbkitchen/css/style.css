@@ -1,0 +1,467 @@
+@charset "utf-8";
+
+/* Reset */
+
+html, body, h1, h2, h3, p, ul, ol, li, table, tr, th, td {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* font-size */
+html { font-size: 62.5%; }  /* =10px */
+body { font-size: 16px; font-size: 1.6rem; }  /* =16px */
+h1 { font-size: 32px; font-size: 3.2rem; }
+h2 { font-size: 24px; font-size: 2.4rem; }
+h3 { font-size: 20px; font-size: 2.0rem; }
+h4 { font-size: 18px; font-size: 1.8rem; }
+p { font-size: 16px; font-size: 1.6rem }
+
+h1 {
+    line-height: 50px;
+    font-family: 'Inconsolata', monospace;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+#contianer {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+/* ヘッダー */
+
+header {
+    width: 100%;
+    background: #fff url(../img/head_bg.jpg) 0 0;
+}
+
+header .header_inner {
+    width: 960px;
+    margin: 0 auto;
+    height: 100px;
+    position: relative;
+}
+
+.herbs {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+
+
+/* #contents */
+
+#contents {
+    width: 960px;
+    margin: 30px auto;
+}
+
+
+/* ナビ */
+
+nav ul {
+    width: 960px;
+}
+
+ul:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+ul li {
+    width: 192px;
+    height: 50px;
+    float: left;
+}
+
+ul li a {
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: rgb(180, 227, 145);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(180, 227, 145, 1) 0%, rgba(97, 196, 25, 1) 50%, rgba(180, 227, 145, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(180, 227, 145, 1) 0%, rgba(97, 196, 25, 1) 50%, rgba(180, 227, 145, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+}
+
+ul li a.current {
+    background: rgb(180, 227, 145);
+}
+
+ul li a:hover {
+    background: rgb(180, 227, 145);
+}
+
+h2 {
+    padding-left: 1em;
+    position: relative;
+    margin: 1em 0;
+}
+
+h2:before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #66c620;
+}
+
+main:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+section {
+    float: left;
+    width: 470px;
+}
+
+#octopus {
+    margin-right: 20px;
+}
+
+#octopus p img, #shirasu p img {
+    float: left;
+    border: 3px solid #66c620;
+    margin-right: .5em;
+}
+
+h3 {
+    padding-left: .75em;
+    margin-bottom: .5em;
+    border-left: 6px solid #66c620;
+}
+
+footer {
+    width: 100%;
+    background: url(../img/head_bg.jpg) 0 0;
+}
+
+.footer_inner {
+    width: 960px;
+    margin: 0 auto;
+    height: 100px
+}
+
+.footer_inner p {
+    text-align: center;
+    color: #222;
+    line-height: 100px;
+}
+
+.footer_inner p a {
+    color: blue;
+}
+
+@media screen and (min-width:480px) and ( max-width:959px) {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+
+    #contianer {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    h1 {
+      line-height: 50px;
+      font-size: 1.8em;
+      padding-left: 3%;
+    }
+
+
+    /* ヘッダー */
+    header {
+        width: 100%;
+        background: #fff url(../img/head_bg.jpg) 0 0;
+    }
+    header .header_inner {
+        width: 100%;
+        margin: 0 auto;
+        height: 100px;
+        position: relative;
+    }
+    .herbs {
+        position: absolute;
+        right: 0;
+        bottom: 5px;
+    }
+
+
+    /* #contents */
+
+    #contents {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+
+    /* ナビ */
+
+    nav ul {
+        width: 100%;
+    }
+
+    ul li {
+        width: 20%;
+        height: 50px;
+        float: left;
+    }
+
+    ul li a {
+        display: block;
+        font-size: 1.1rem;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        background: rgb(180, 227, 145);
+        /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(180, 227, 145, 1) 0%, rgba(97, 196, 25, 1) 50%, rgba(180, 227, 145, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(180, 227, 145, 1) 0%, rgba(97, 196, 25, 1) 50%, rgba(180, 227, 145, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+    }
+
+    ul li a.current {
+        background: rgb(180, 227, 145);
+    }
+
+    ul li a:hover {
+        background: rgb(180, 227, 145);
+    }
+
+    h2 {
+        padding-left: 1em;
+        position: relative;
+        margin: 1em 0;
+    }
+
+    h2:before {
+        display: inline-block;
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: #66c620;
+    }
+
+    main:after {
+        clear: both;
+        content: '';
+        display: block;
+    }
+
+    section {
+        float: left;
+        width: 100%;
+    }
+
+    #octopus {
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
+
+    #octopus p img, #shirasu p img {
+        float: left;
+        border: 3px solid #66c620;
+        margin-right: .5em;
+    }
+
+    h3 {
+        padding-left: .75em;
+        margin-bottom: .5em;
+        border-left: 6px solid #66c620;
+    }
+
+    footer {
+        width: 100%;
+        background: url(../img/head_bg.jpg) 0 0;
+    }
+
+    .footer_inner {
+        width: 100%;
+        margin: 0 auto;
+        height: 100px
+    }
+
+    .footer_inner p {
+        text-align: center;
+        color: #222;
+        line-height: 100px;
+    }
+
+    .footer_inner p a {
+        color: blue;
+    }
+
+
+}
+
+@media screen and (max-width:479px) {
+    /*　画面サイズが480pxからはここを読み込む　*/
+
+    #contianer {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    h1 {
+      line-height: 50px;
+      font-size: 1.8em;
+      padding-left: 3%;
+    }
+
+
+    /* ヘッダー */
+    header {
+        width: 100%;
+        background: #fff url(../img/head_bg.jpg) 0 0;
+    }
+    header .header_inner {
+        width: 100%;
+        margin: 0 auto;
+        height: 100px;
+        position: relative;
+    }
+    .herbs {
+        position: absolute;
+        right: 0;
+        bottom: 5px;
+    }
+
+
+    /* #contents */
+
+    #contents {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+
+    /* ナビ */
+
+    nav ul {
+        width: 100%;
+    }
+
+    ul li {
+        width: 50%;
+        height: 50px;
+        float: left;
+    }
+
+    ul li:last-child{
+      width: 100%;
+    }
+
+    ul li a {
+        display: block;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        background: rgb(180, 227, 145);
+        /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(180, 227, 145, 1) 0%, rgba(97, 196, 25, 1) 50%, rgba(180, 227, 145, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(180, 227, 145, 1) 0%, rgba(97, 196, 25, 1) 50%, rgba(180, 227, 145, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+    }
+
+    ul li a.current {
+        background: rgb(180, 227, 145);
+    }
+
+    ul li a:hover {
+        background: rgb(180, 227, 145);
+    }
+
+    h2 {
+        padding-left: 1em;
+        position: relative;
+        margin: 1em 0;
+    }
+
+    h2:before {
+        display: inline-block;
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: #66c620;
+    }
+
+    main:after {
+        clear: both;
+        content: '';
+        display: block;
+    }
+
+    section {
+        float: left;
+        width: 100%;
+    }
+
+    #octopus {
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
+
+    #octopus p img, #shirasu p img {
+        float: left;
+        border: 3px solid #66c620;
+        margin-right: .5em;
+    }
+
+    h3 {
+        padding-left: .75em;
+        margin-bottom: .5em;
+        border-left: 6px solid #66c620;
+    }
+
+    footer {
+        width: 100%;
+        background: url(../img/head_bg.jpg) 0 0;
+    }
+
+    .footer_inner {
+        width: 100%;
+        margin: 0 auto;
+        height: 100px
+    }
+
+    .footer_inner p {
+        text-align: center;
+        color: #222;
+        line-height: 100px;
+    }
+
+    .footer_inner p a {
+        color: blue;
+    }
+
+}

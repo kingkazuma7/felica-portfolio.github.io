@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/* @group Reset */
+
+*{ margin: 0;padding: 0}
+
+a { text-decoration : none}
+ul, ol { list-style : none}
+img { vertical-align : middle}
+
+/* @end */
+
+
+/* @group Fluid-img */
+
+img { max-width : 100%}
+
+/* @end */
+
+
+/* @group HTML */
+
+html {
+font-family : verdana, sans-serif;
+font-size : 75%; /*レスポンシブタイプセッティングの指定*/
+line-height : 1.5}
+
+/* @end */
+
+
+/* @group Heading */
+
+h1 {
+font-size : 3em; /* 48px */
+line-height : 1; /* 48px */
+margin-bottom : 0.5em }
+
+h2 {
+font-size : 2.25em; /* 36px */
+line-height : 1.3333; /* 48px */
+margin-bottom : 0.6667em }
+
+h3 {
+font-size : 1.5em; /* 24px */
+line-height : 1; /* 24px */
+margin-bottom : 1em }
+
+hgroup h2,h4,h5,h6 {
+font-size : 1em; /* 16px */
+line-height : 1.5; /* 24px */
+margin-bottom : 1.5em }
+
+/* @end */
+
+/* @group Header */
+
+header {
+text-align : center;
+padding-top : 1.5em;
+background : #211f1f}
+
+header h1 { margin-bottom : 0.5em}
+header h2 { color : #fff}
+
+/* @end */
+
+/* @group Nav */
+
+nav {
+margin-bottom : 1.5em;
+background-color: #7D4934;
+background: -moz-linear-gradient(top, rgba(125,73,52,1) 0%, rgba(43,21,18,1) 88%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,73,52,1)), color-stop(88%,rgba(43,21,18,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(125,73,52,1) 0%,rgba(43,21,18,1) 88%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(125,73,52,1) 0%,rgba(43,21,18,1) 88%); /* Opera 11.10+ */
+background: linear-gradient(to bottom, rgba(125,73,52,1) 0%,rgba(43,21,18,1) 88%); /* W3C */
+}
+
+nav ul { overflow : hidden}
+nav ul li { width : 25%; float : left}
+nav ul li a {
+display : block;
+color : #d8c2a4;
+padding : 0.75em 0}
+
+nav ul li a:hover {
+color : white;
+background-color : #7d4934}
+
+/* @end */
+
+/* @group Contents */
+
+#contents {
+width : 90%;
+margin : 0 auto;
+text-align : center}
+
+#contents p {
+margin-bottom : 1.5em;
+text-align : left}
+#contents img {
+margin-bottom : 1.5em;
+box-shadow : 0 0 5px #2f1f1f}
+
+/* @end */
+
+/* @group Footer */
+
+footer {
+padding : 1.5em 0;
+color : white;
+text-align : center;
+background : url(../images/footer_bg.png)}
+
+/* @end */
+
+/*768px*/
+@media screen and (min-width : 768px){
+
+html{ font-size : 87.5%} /*レスポンシブタイプセッティングの指定*/
+#contents { text-align : left}
+
+}
+
+/*1024px*/
+@media screen and (min-width : 1024px) {
+
+html{ font-size : 100%} /*レスポンシブタイプセッティングの指定*/
+
+/* @group Nav */
+
+nav ul {
+width : 93.75%;/* 960/1024 */
+margin : 0 auto}
+
+/* @end */
+
+/* @group Contents */
+
+#contents {
+overflow : hidden;
+width : 93.75%}
+
+#contents #main,
+#contents #sub {
+float : left;
+margin : 0 1.0416667% }
+
+#contents #main { width : 64.5833333%}
+#contents #sub { width : 31.25%}
+
+/* @end */
+
+
+/* @group Footer */
+
+footer {
+}
+
+.footer_inner {
+    width: 91.796875%;/*940/1024*/
+    margin: 0 auto;
+}
+/* @end */
+
+}

@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body,h1,p,ul,li{
+margin:0;
+padding:0;
+line-height:1.0;
+font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;	
+}
+
+img{
+border:none;
+vertical-align:bottom;	
+}
+
+ul{
+list-style:none;	
+}
+
+a{
+text-decoration:none;	
+}
+
+/*layput*/
+#container{
+	width:960px;
+	margin:10px auto;
+overflow:hidden;	
+}
+.column{
+float:left;	
+}
+header{
+width:320px;
+overflow:hidden;	
+}
+h1{
+margin:10px;	
+}
+
+
+ul{
+overflow:hidden;
+width:320px;	
+}
+
+.column ul li{
+margin:10px;
+float:left;	
+}
+.column ul li.right{
+float:right;	
+}
+
+footer#pc {
+  width: 100%;
+  height: 50px;
+  background: #281605;
+}
+footer#pc p {
+  text-align: center;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 50px;
+}
+footer#sp{
+display:none;
+}
+#modoru{
+text-align:right;
+}
+
+@media screen and (max-width:950px){
+#container{
+width:640px;
+box-sizing:border-box;
+}
+.three{
+width:640px;
+overflow:hidden;
+}
+.three ul{
+float:left;
+}
+footer#sp {
+display:block;
+  width: 300px;
+  height: 300px;
+  background: #281605;
+  float:left;
+  margin:10px;
+}
+footer#sp p {
+   padding:250px 0 0 0;
+  text-align: center;
+  color: #FFF;
+}
+footer#pc{
+display:none;
+}
+}
+@media screen and (max-width:639px){
+#container{
+width:320px;
+}
+footer#pc {
+display:block;
+  width: 100%;
+  height: 50px;
+  background: #281605;
+}
+footer#pc p {
+  text-align: center;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 50px;
+}
+footer#sp{
+display:none;
+}
+
+}

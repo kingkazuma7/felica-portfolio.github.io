@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* リセット */
+html,body,h1,h2,h3,h4,p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.0;
+  font-family: "Hiragino Kaku Gothic ProN",Meiryo, sans-serif;
+  font-weight: normal;
+}
+
+/*---------------------------*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    background: #a7dcec;
+}
+
+#container {
+    width: 840px;
+	background: #fff;
+}
+
+#wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+div#header {
+    padding-top: 10px;
+    background: url("../img/header_bg.jpg") no-repeat center center;
+}
+
+h1 {
+    line-height: 230px;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: bold;
+    position: relative;
+    top: 70px;
+    left: 550px;
+		}
+
+
+h2 {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: #0065cf 10px solid;
+    font-size: 2.4rem;
+}
+
+h3 {
+    padding-left: 10px;
+    line-height: 40px;
+    border-top: 1px dashed #000;
+    border-bottom: 1px dashed #000;
+    background: #e0ebff;
+    font-size: 2.0rem;
+}
+
+h4 {
+    margin: 10px 0 10px;
+    color: #416fd1;
+    font-size: 1.8rem;
+}
+
+h1,h2,h3,h4 {
+    font-weight: bold;
+}
+
+h2,h3 {
+    color: #3a4875;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
+
+p.header {
+    width: 670px;
+    margin: 10px auto 40px;
+}
+
+p.main {
+    padding: 0 0 10px 60px;
+}
+
+.footer {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px #000 dashed;
+    padding: 10px;
+}

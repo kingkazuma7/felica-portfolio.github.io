@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*reset*/
+html,body,h1,h2,h3,h4,p,ul,li,table,tr,th,td,section,nav,ul,li,header,footer{
+  margin: 0;
+  padding: 0;
+  line-height: 1.0;
+  font-family:
+  "Hiragino Kaku Gothic ProN",
+  Meiryo,
+  sans-serif;
+  }
+
+img {
+  border: none;
+  vertical-align: bottom;
+  width: 100%;
+  }
+
+ul { list-style: none; }
+
+a { text-decoration: none; }
+
+/*layout*/
+
+html,body {
+	height: 100%;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+	float: right;
+	position: relative;
+}
+
+.top {
+	width: 50%;
+	height: 50%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #FFF;
+	box-sizing: border-box;
+}
+
+.bottom {
+	width: 33.3%;
+	height: 50%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #FFF;
+	box-sizing: border-box;
+}
+
+.topL {
+	background: url("img/01.jpg") no-repeat;
+	background-size: cover;
+}
+
+.topR {
+	background: url("img/02.jpg") no-repeat;
+	background-size: cover;
+}
+
+.btmL {
+	background: url("img/03.jpg") no-repeat;
+	background-size: cover;
+}
+
+.btmC {
+	background: url("img/04.jpg") no-repeat;
+	background-size: cover;
+}
+
+.btmR {
+	background: url("img/05.jpg") no-repeat;
+	background-size: cover;
+}
+
+/*ホバーアクション*/
+.top a,.bottom a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.cap {
+	padding-top: 220px;/*文字の量によって調整*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 10;
+	opacity: 0.8;
+	background: rgba(0,0,0,0);
+	cursor: default;
+	transition: ease 0.3s;
+}
+
+.cap:hover {
+	top: -40%; /*ホバーした際に動く距離*/
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+h3 {
+	padding-bottom: 20px;
+	color: #FFF;
+	font-size: 22px;
+}
+
+p.text {
+	color: #FFF;
+	font-size: 16px;
+	padding-bottom: 30px;
+}
+
+p.view {
+	width: 40%;
+	margin: 0 auto;
+	font-size: 20px;
+	color: #FFF;
+	padding: 10px;
+	border: 1px solid #FFF;
+	transition: 0.2s ease-in-out;
+}
+
+.view:hover {
+	background: #FFF;
+	color: #111;
+}
+
+@media screen and (max-width : 767px){
+
+header {
+	width: 100%;
+	height: 80px;
+	float: none;
+	z-index: 100;
+}
+
+#container {
+	width: 100%;
+	float: none;
+}
+
+.top, .bottom {
+	width: 100%;
+	float: none;
+	margin-bottom: 180px;/*.capが表示される領域*/
+	overflow: inherit; /*overflowを初期値に戻す*/
+}
+
+.top a, .bottom a {
+	cursor: default;
+}
+
+.topL {
+	padding-top: 80px;
+}
+
+p.logo {
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	margin: 0;
+	z-index: 1000;
+}
+
+p.logo img {
+	max-width: 100%; /*サイズを変えられるので非常に便利*/
+}
+
+.cap {
+	padding-top: 0px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 180px;
+	opacity: 1;
+	background: rgba(0,0,0,1);
+	transition: none;
+}
+
+.cap:hover {
+	top: 100%; /*ホバーした際に動く距離*/
+	left: 0;
+	background: rgba(0,0,0,1);
+}
+
+h3{
+  padding:20px 0;
+  color: #FFF;
+  font-size: 20px;
+}
+
+.text {
+  color: #FFF;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+}

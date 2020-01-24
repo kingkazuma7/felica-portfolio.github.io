@@ -1,0 +1,112 @@
+@charset "utf-8";
+html, body, ul, li, p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.0;
+}
+body {
+  background: #5F3D18;
+  color: #FFF;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: 0;
+}
+#container {
+  background: #FFF;
+  width: 840px;
+  height: 410px;
+  background: url("http://webks.work/portfolio/camellia/css/img/shadow.gif") repeat-x left bottom;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -220px 0 0 -420px;
+}
+#wrapper {
+  width: 840px;
+  height: 400px;
+  background: #FFF;
+  overflow: hidden;
+}
+#sidebar {
+  width: 270px;
+  height: 390px;
+  float: left;
+  padding: 20px;
+}
+#content {
+  width: 510px;
+  height: 440px;
+  float: right;
+  position: relative;
+}
+/* img_position*/
+img.logo {
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+}
+img.campaign {
+  position: absolute;
+  right: -15px;
+  top: -23px;
+}
+/*  img_content_position */
+img.photo01 {
+  position: absolute;
+  right: 0;
+  top: 80px;
+}
+img.photo10 {
+  position: absolute;
+  right: 0;
+  top: 240px;
+}
+img.photo09 {
+  position: absolute;
+  right: 80px;
+  top: 320px;
+}
+img.photo07 {
+  position: absolute;
+  right: 160px;
+  top: 80px;
+}
+img.photo05 {
+  position: absolute;
+  right: 240px;
+  top: 0;
+}
+img.photo06 {
+  position: absolute;
+  right: 240px;
+  top: 160px;
+}
+img.photo08 {
+  position: absolute;
+  right: 160px;
+  top: 240px;
+}
+img.photo02 {
+  position: absolute;
+  right: 240px;
+  top: 240px;
+}
+img.photo03 {
+  position: absolute;
+  right: 320px;
+  top: 0;
+}
+img.photo04 {
+  position: absolute;
+  right: 400px;
+  top: 160px;
+}

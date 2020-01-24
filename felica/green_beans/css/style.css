@@ -1,0 +1,139 @@
+@charset 'utf-8';
+html,body,p,ul,li,h1,h2,h3,h4{
+  margin:0;
+  padding:0;
+  line-height:1.0;
+  font-family:'Hiragino Kaku Gothic ProN'
+  ,Meiryo,sans-serif;
+}
+img{
+ vertical-align:middle;
+}
+ul{list-style:none;}
+a{text-decoration:none;}
+p{line-height:1.6;}
+/*font-size*/
+html{font-size:62.5%;} /*10px*/
+body{font-size:16px; font-size:1.6rem;}/*16px*/
+h1{font-size:32px; font-size:3.2rem;}
+h2{font-size:24px; font-size:2.4rem;}
+h3{font-size:20px; font-size:2.0rem;}
+h4{font-size:18px; font-size:1.8rem;}
+p{font-size:16px; font-size:1.6rem;}
+/**/
+h1{
+ font-size:48px;
+ margin:30px 0;
+}
+h2{margin-bottom:20px;}
+h3{margin:20px 0;}
+h4{margin:15px 0;}
+p{text-align:left;}
+/*img*/
+img {max-width:100%;}
+
+/*#container*/
+#container{
+ width:100%;
+ text-align:center;
+}
+
+/*nav*/
+nav{
+ overflow:hidden;
+ width:100%;
+}
+ul li{
+ background:-webkit-linear-gradient(#754435,#5D1C05);
+ background:linear-gradient(#754435,#5D1C05);
+ background: linear-gradient(#754435,#5D1C05);
+ float: left;
+ box-sizing:border-box;
+ width:25%;
+ text-align:center;
+}
+ul li a{
+ width:100%;
+ float:left;
+ line-height:40px;
+ display:block;
+ color:#fff;
+}
+ul li a:hover{
+ color:#6F3;
+ background: -webkit-linear-gradient(#5D1C05,#754435);
+ background: linear-gradient(#5D1C05,#754435);
+}
+*/
+/*#vitamin*/
+#vitamin{
+ margin-bottom:30px; 
+}
+
+/*.been 画像*/
+.been{
+ margin-bottom:15px;
+}
+
+/*aside*/
+aside > p{
+ margin-bottom:15px;
+}
+
+/*footer*/
+footer{
+ background:#5F9E34;height:;
+}
+footer p{
+ color:#fff;
+ text-align:center;
+ line-height:3em;
+}
+
+@media screen and (min-width: 768px){
+ navi{
+  width:100%;
+ }
+ #contents{
+  overflow:hidden;
+  width:93.75%; /*960÷1024*/
+  margin:50px auto;
+ }
+ #main{/*画像基準*/
+  width:66.55%; /*620÷1024*/
+  margin-right:2.1%;
+  box-sizing:border-box;
+  float:left;
+  overflow:hidden;
+ }
+ #sub{
+  float:left;
+  width:31.25%; /*320÷1024*/
+ }
+}
+
+@media screen and (min-width: 1024px){
+ #container{
+  width:1024px;
+  margin:0 auto;
+ }
+ navi{
+  width:1024px;
+ }
+ #contents{
+  overflow:hidden;
+  width:960px;
+  margin:50px auto;
+ }
+ #main{
+  width:620px;
+  margin-right:20px;
+  float:left;
+  overflow:hidden;
+ }
+ #sub{
+  float:left;
+  width:320px;
+ }
+ 
+}/*1024px*/
